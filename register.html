@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script
+      src="https://kit.fontawesome.com/33d09997d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="register.js" defer></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="" id="form">
+        <h1>Registration</h1>
+        <div class="form-group">
+          <label for="name">
+            <strong> Name: </strong>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <strong> Email: </strong>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="password">
+            <strong> Password: </strong>
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <i class="fas fa-eye-slash" id="eye"></i>
+          <div class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="cPassword">
+            <strong> Confirm Password: </strong>
+          </label>
+          <input
+            type="password"
+            id="cPassword"
+            name="cPassword"
+            placeholder="Confirm your password"
+          />
+          <i class="fas fa-eye-slash" id="cEye"></i>
+
+          <div class="error"></div>
+        </div>
+        <p>Already have an account <a href="login.html">Login</a></p>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>

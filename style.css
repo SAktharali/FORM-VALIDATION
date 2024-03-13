@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #0f2027;
+}
+
+#form h1 {
+  color: #0f2027;
+  text-align: center;
+}
+
+#form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: rgb(41, 57, 194);
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+}
+
+.form-group label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  display: block;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+/* .form-group .success {
+  color: #09c372;
+} */
+
+.form-group .error {
+  color: #ff3860;
+}
+
+@media (max-width: 600px) {
+  #form {
+    width: 90%;
+  }
+}
